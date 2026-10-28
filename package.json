@@ -1,0 +1,24 @@
+{
+  "name": "dnd-character-manager",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "npm run dev -w @dnd/web",
+    "build": "npm run build -w @dnd/shared && npm run build -w @dnd/rules-engine && npm run build -w @dnd/sync && npm run build -w @dnd/web",
+    "typecheck": "npm run typecheck -w @dnd/shared && npm run typecheck -w @dnd/rules-engine && npm run typecheck -w @dnd/sync && npm run typecheck -w @dnd/web",
+    "test": "npm run test -w @dnd/shared && npm run test -w @dnd/rules-engine && npm run test -w @dnd/sync",
+    "test:core:offline": "bash scripts/test-core-offline.sh"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "@types/node": "^22.0.0"
+  }
+}

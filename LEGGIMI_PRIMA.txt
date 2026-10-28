@@ -1,0 +1,10 @@
+GESTIONALE SCHEDE D&D — VERSIONE LOCALE
+
+1. Carica su GitHub tutto il contenuto di questa cartella, mantenendo le directory.
+2. Importa il repository in Vercel. Il file vercel.json contiene già le impostazioni di build.
+3. Vercel installerà le dipendenze e pubblicherà apps/web/dist.
+
+Nessun account, database remoto o configurazione Supabase è necessario.
+I personaggi vengono salvati in IndexedDB nel browser in uso.
+Usa i pulsanti Esporta/Importa per creare e ripristinare backup JSON.
+Se cancelli i dati del browser, l'archivio locale può andare perso.

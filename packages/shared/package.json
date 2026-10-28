@@ -1,0 +1,8 @@
+{
+  "name": "@dnd/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {".": "./src/index.ts"},
+  "scripts": {"typecheck": "tsc --noEmit -p tsconfig.json", "build": "tsc --noEmit -p tsconfig.json", "test": "node --experimental-strip-types --test src/*.test.ts"}
+}
